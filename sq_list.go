@@ -75,17 +75,29 @@ func (l *SqList) ListDelete(i int) (error,  *SqNode) {
 	}
 	var ptmp *SqNode = l.head
 	var tmp *SqNode = ptmp.next
-	for j := 0; j < i; j ++ {
+	for j := 0; j < i - 1; j ++ {
 		if tmp == nil {
 			return overStackError, nil
 		}
 		ptmp = ptmp.next
 		tmp = ptmp.next
 	}
-	fmt.Printf("%d - %d\n",ptmp.data, tmp.data)
 	ptmp.next = tmp.next
 	tmp.next = nil
 	return nil,tmp
+}
+
+func (l *SqList) CreateListHead(n int) {
+	if n == 0 {
+		l.head = nil
+		return
+	}
+	l.head = NewSqNode(0)
+	tmp := l.head
+	for i := 0; i < n - 1; i ++ {
+		tmp.next = NewSqNode(0)
+		tmp = tmp.next
+	}
 }
 
 func NewSqNode(d DataType) *SqNode {

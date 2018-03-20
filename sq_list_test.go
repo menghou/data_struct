@@ -39,10 +39,27 @@ func TestSqList_ListInsert(t *testing.T) {
 func TestSqList_ListDelete(t *testing.T) {
 	test1 := &SqList{head:NewSqNode(3)}
 	test1.ListInsert(1,10)
-	if err, r := test1.ListDelete(0); err != nil {
+	test1.ListInsert(1,100)
+	t.Log(test1)
+	if err, r := test1.ListDelete(1); err != nil {
 		t.Error(err)
 	} else {
 		t.Log(test1.String())
 		t.Log(r)
 	}
+}
+
+func TestSqList_CreateListHead(t *testing.T) {
+	test1 := &SqList{}
+	test1.CreateListHead(0)
+	t.Log(test1)
+	test2 := &SqList{}
+	test2.CreateListHead(1)
+	t.Log(test2)
+	test3 := &SqList{}
+	test3.CreateListHead(2)
+	t.Log(test3)
+	test4 := &SqList{}
+	test4.CreateListHead(3)
+	t.Log(test4)
 }

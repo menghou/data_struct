@@ -1,11 +1,6 @@
 <component name="libraryTable">
   <library name="GOPATH &lt;data_struct&gt;">
     <CLASSES>
-      <root url="file:///usr/local/go/src/builtin" />
-      <root url="file:///usr/local/go/src/go" />
-      <root url="file:///usr/local/go/src/bytes" />
-      <root url="file:///usr/local/go/src/time" />
-      <root url="file:///usr/local/go/src/container" />
       <root url="file:///usr/local/go/src/mime" />
       <root url="file:///usr/local/go/src/fmt" />
       <root url="file:///usr/local/go/src/path" />
@@ -62,14 +57,14 @@
       <root url="file:///usr/local/go/src/vendor" />
       <root url="file:///usr/local/go/src/debug" />
       <root url="file:///usr/local/go/src/os" />
+      <root url="file:///usr/local/go/src/builtin" />
+      <root url="file:///usr/local/go/src/go" />
+      <root url="file:///usr/local/go/src/bytes" />
+      <root url="file:///usr/local/go/src/time" />
+      <root url="file:///usr/local/go/src/container" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="file:///usr/local/go/src/builtin" />
-      <root url="file:///usr/local/go/src/go" />
-      <root url="file:///usr/local/go/src/bytes" />
-      <root url="file:///usr/local/go/src/time" />
-      <root url="file:///usr/local/go/src/container" />
       <root url="file:///usr/local/go/src/mime" />
       <root url="file:///usr/local/go/src/fmt" />
       <root url="file:///usr/local/go/src/path" />
@@ -126,6 +121,11 @@
       <root url="file:///usr/local/go/src/vendor" />
       <root url="file:///usr/local/go/src/debug" />
       <root url="file:///usr/local/go/src/os" />
+      <root url="file:///usr/local/go/src/builtin" />
+      <root url="file:///usr/local/go/src/go" />
+      <root url="file:///usr/local/go/src/bytes" />
+      <root url="file:///usr/local/go/src/time" />
+      <root url="file:///usr/local/go/src/container" />
     </SOURCES>
     <excluded>
       <root url="file://$PROJECT_DIR$" />

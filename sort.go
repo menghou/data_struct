@@ -46,6 +46,7 @@ func InsertSort(data Interface) {
 		}
 	}
 }
+//类似插入排序
 func ShellSort(data Interface) {
 	for increasement := data.Len() / 3 + 1; increasement >= 1; increasement /= 3 {
 		for i := increasement; i < data.Len() ; i ++ {
@@ -70,7 +71,7 @@ func heapSort(data Interface, a, b int) {
 	hi := b - a
 
 	for i := (hi - 1) / 2; i >= 0; i ++ {
-		heapAdjust(data, lo, hi, first)
+		heapAdjust(data, lo, i, first)
 	}
 
 	for i := (hi - 1); i >= 0; i ++ {
